@@ -1,88 +1,90 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YOCTO Token | Time Origin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOCTO - Time Origin</title>
   <style>
-    body {
-      background: radial-gradient(circle at top, #0f0f0f, #050505);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #00ffd0;
-      text-align: center;
-    }
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    code {
-      background: #222;
-      padding: 0.2rem 0.4rem;
-      border-radius: 5px;
-      color: #00ff88;
-    }
-    .container {
-      background: #111;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 0 20px #00ffd07a;
-    }
-    .link {
-      color: #00ffd0;
-      text-decoration: none;
-    }
-    .link:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #888;
-    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.background-float {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200%;
+  height: 200%;
+  background: url('logo-yocto.png') center center / contain no-repeat;
+  opacity: 0.03;
+  animation: float 30s linear infinite;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.container {
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 700px;
+}
+
+.logo {
+  width: 180px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.credit {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  opacity: 0.6;
+}
+
   </style>
 </head>
 <body>
+  <div class="background-float"></div>
   <div class="container">
-    <h1>YOCTO — Time Origin Token</h1>
-    <p><strong>🪙 Simbol:</strong> YOCTO</p>
-    <p><strong>🔢 Supply:</strong> 1.000.000.000.000 (1 Triliun)</p>
-    <p><strong>🔗 Jaringan:</strong> Solana Mainnet</p>
-    <p><strong>🧬 Mint Address:</strong><br>
-      <a class="link" href="https://solscan.io/token/9nVKzyzLyftKkpsjRS6Z4Z3v5LZBqR4NssEtqAG3mR2u" target="_blank">
-        9nVKzyzLyftKkpsjRS6Z4Z3v5LZBqR4NssEtqAG3mR2u
-      </a>
-    </p><h2>Apa Itu YOCTO?</h2>
-<p><em>YOCTONOMIK TIME ORIGIN</em> adalah proyek berbasis waktu sebagai sumber nilai. Token ini bukan hanya mata uang, tetapi simbol dari energi terkecil, ketekunan hidup, dan penghargaan terhadap waktu manusia.</p>
-
-<h2>Kenapa YOCTO?</h2>
-<ul>
-  <li>✅ Dibuat langsung dari Android — tanpa laptop</li>
-  <li>✅ Sudah aktif di Solana Mainnet</li>
-  <li>✅ Supply terbatas: 1 Triliun</li>
-  <li>✅ Filosofis, bukan asal bikin token</li>
-</ul>
-
-<h2>📨 Donasi & Dukungan</h2>
-<p>Jika kamu ingin mendukung proyek YOCTO:</p>
-<code>8C2G7Wh3iJf7YCa9XdfQ3FE9amgmwXSmV8Vdo2NwqGM8</code>
-
-<h2>💡 Kontak & Komunitas</h2>
-<ul>
-  <li>Telegram: @nurohman09</li>
-  <li>   X    : https://x.com/nurohman011<a class="link" href="https://x.com/nurihman01" target="_blank">@nurihman01</a></li>
-  <li>Discord: #nurohman01</li>
-</ul>
-
+    <img src="logo-yocto.png" alt="YOCTO Logo" class="logo" />
+    <h1>YOCTO</h1>
+    <p>
+      <strong>Jam pasir</strong> adalah simbol waktu yang sederhana, sebelum teknologi modern. Tapi fungsinya sama — penanda waktu yang tak bisa diulang.<br><br>
+      Posisi miring berarti <em>“loading”</em> — proses yang sedang berlangsung, menuju tujuan tak terbatas. <code>$$$</code> berarti uang sedang dimuat, <strong>tanpa batas</strong>.<br><br>
+      <strong>YOCTO</strong> adalah satuan waktu paling kecil yang sering dilupakan dan diremehkan. Tapi dari YOCTO lah semua momentum besar tercipta.
+    </p>
+    <div class="credit">Powered by Yoctonomik Time Origin</div>
   </div>
-  <footer>
-    Dibangun dengan semangat, dari Android — oleh Yocto.
-  </footer>
 </body>
 </html>
