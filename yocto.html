@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOCTO Token</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #00cfff, #0088cc);
+      color: #fff;
+    }
+    .logo {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .logo img {
+      width: 150px;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 10px;
+    }
+    .tab-btn {
+      background-color: #005f7a;
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background-color: #00b7e6;
+    }
+    .tab-content {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .tab-content h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>  <div class="logo">
+    <img src="yocto-logo.png" alt="YOCTO Logo">
+  </div>
+  <h1>YOCTO Token</h1>  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('whitepaper')">Whitepaper</button>
+    <button class="tab-btn" onclick="showTab('tokenomics')">Tokenomics</button>
+  </div>  <div id="whitepaper" class="tab-content active">
+    <h2>Deskripsi</h2>
+    <p>YOCTO adalah token tata kelola keuangan untuk masyarakat (komunitas) yang memetakan berdasarkan waktu dan kebutuhan dasar agar lebih efisien dan jadi lebih sejahtera.</p><h2>Utilitas</h2>
+<p>Token YOCTO adalah token utama untuk monetisasi NOMEapp.</p>
+
+<h2>Visi & Misi</h2>
+<p>Dalam dunia bisnis dan kapitalisme politik (yang kaya makin kaya, yang miskin cuma dapat getahnya), di era crypto Web3 sekarang pun sudah dikuasai kapitalis dan formatnya menjadi sama seperti keuangan konvensional.</p>
+<p>Maka lahirlah YOCTO, token kecil dari orang kecil untuk orang kecil. Jika mereka bilang "waktu adalah uang", YOCTO bilang waktu adalah "kejujuran".</p>
+
+  </div>  <div id="tokenomics" class="tab-content">
+    <h2>Distribusi Token</h2>
+    <p>Total Suplai: 1 Triliun YOCTO</p>
+    <ul>
+      <li>50% untuk Airdrop Komunitas</li>
+      <li>50% untuk Monetisasi NOMEapp</li>
+    </ul>
+  </div>  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script></body>
+</html>
